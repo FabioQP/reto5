@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Misi&oacute;n TIC 2022</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
+<body>
+
+<h2>Administraci&oacute;n de Categorias</h2>
+
+<b>Listado de Categorias</b>
+</br></br>
+<div id="resultadoCategories"></div>
+</br>
+<button onclick="traerInformacionCategories()">Consultar</button>
+</br></br>
+
+<b>Formulario de Creaci&oacute;n y Actualizaci&oacute;n</b>
+</br></br>
+<div>
+    <input type="hidden" id="idCategory" placeholder="id">
+    <input type="text" id="nameCategory" placeholder="name 45 caracteres">
+    <input type="text" id="descriptionCategory" placeholder="description 250 caracteres">
+</div>
+</br></br>
+<button onclick="guardarInformacionCategories()">Guardar Categoria</button>
+<button onclick="editarInformacionCategories()">Actualizar Categoria</button>
+
+<h2>Administraci&oacute;n de Juegos</h2>
+
+<b>Listado de Juegos</b>
+</br></br>
+<div id="resultadoGames"></div>
+</br>
+<button onclick="traerInformacionGames()">Consultar</button>
+</br></br>
+
+<b>Formulario de Creaci&oacute;n y Actualizaci&oacute;n</b>
+</br></br>
+<div>
+    <input type="hidden" id="idGame" placeholder="id no se muestra">
+    <input type="text" id="developerGame" placeholder="developer 45 caracteres">
+    <input type="number" id="yearGame" placeholder="year">
+    <input type="text" id="nameGame" placeholder="name 45 caracteres">
+    <input type="text" id="descriptionGame" placeholder="description 250 caracteres">
+</div>
+</br></br>
+<button onclick="guardarInformacionGames()">Guardar Juego</button>
+<button onclick="editarInformacionGames()">Actualizar Juego</button>
+
+<h2>Administraci&oacute;n de Clientes</h2>
+
+<b>Listado de Clientes</b>
+</br></br>
+<div id="resultadoClients"></div>
+</br>
+<button onclick="traerInformacionClients()">Consultar</button>
+</br></br>
+
+<b>Formulario de Creaci&oacute;n y Actualizaci&oacute;n</b>
+</br></br>
+<div>
+    <input type="hidden" id="idClient" placeholder="id">
+    <input type="text" id="nameClient" placeholder="name 45 caracteres">
+    <input type="text" id="emailClient" placeholder="email 45 caracteres">
+    <input type="number" id="ageClient" placeholder="age numero">
+    <input type="text" id="passwordClient" placeholder="password no se muestra">
+</div>
+</br></br>
+<button onclick="guardarInformacionClients()">Guardar Cliente</button>
+<button onclick="editarInformacionClients()">Actualizar Cliente</button>
+
+<h2>Administraci&oacute;n de Mensajes</h2>
+
+<b>Listado de Mensajes</b>
+</br></br>
+<div id="resultadoMessages"></div>
+</br>
+<button onclick="traerInformacionMessages()">Consultar</button>
+</br></br>
+
+<b>Formulario de Creaci&oacute;n y Actualizaci&oacute;n</b>
+</br></br>
+<div>
+    <input type="hidden" id="idMessage" placeholder="id">
+    <input type="text" id="messageTextMessage" placeholder="name 250 caracteres">
+</div>
+</br></br>
+<button onclick="guardarInformacionMessages()">Guardar Mensaje</button>
+<button onclick="editarInformacionMessages()">Actualizar Mensaje</button>
+
+
+<h2>Administraci&oacute;n de Reservas</h2>
+
+<b>Listado de Reservas</b>
+</br></br>
+<div id="resultadoReservations"></div>
+</br>
+<button onclick="traerInformacionReservations()">Consultar</button>
+</br></br>
+
+<b>Formulario de Creaci&oacute;n y Actualizaci&oacute;n</b>
+</br></br>
+<div>
+    <input type="hidden" id="idReservation" placeholder="id">
+    <input type="date" id="creationDateReservation" placeholder="creationDate">
+    <input type="date" id="startDateReservation" placeholder="startDate">
+    <input type="date" id="devolutionDateReservation" placeholder="devolutionDate">
+    <input type="text" id="statusReservation" placeholder="status">
+    <input type="text" id="scoreReservation" placeholder="score">
+
+</div>
+</br></br>
+<button onclick="guardarInformacionReservations()">Guardar Reserva</button>
+<button onclick="editarInformacionReservations()">Actualizar Reserva</button>
+</body>
+</html>

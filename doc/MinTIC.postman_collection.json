@@ -1,0 +1,1319 @@
+{
+	"info": {
+		"_postman_id": "6fa485ba-b6e0-41d6-afdf-1d79be614282",
+		"name": "MinTIC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CICLO3",
+			"item": [
+				{
+					"name": "RETO1",
+					"item": [
+						{
+							"name": "GET BY ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://gaaed14b85e5bfb-db202109280838.adb.sa-saopaulo-1.oraclecloudapps.com/ords/admin/games/games/1",
+									"protocol": "https",
+									"host": [
+										"gaaed14b85e5bfb-db202109280838",
+										"adb",
+										"sa-saopaulo-1",
+										"oraclecloudapps",
+										"com"
+									],
+									"path": [
+										"ords",
+										"admin",
+										"games",
+										"games",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://gaaed14b85e5bfb-db202109280838.adb.sa-saopaulo-1.oraclecloudapps.com/ords/admin/games/games",
+									"protocol": "https",
+									"host": [
+										"gaaed14b85e5bfb-db202109280838",
+										"adb",
+										"sa-saopaulo-1",
+										"oraclecloudapps",
+										"com"
+									],
+									"path": [
+										"ords",
+										"admin",
+										"games",
+										"games"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gaaed14b85e5bfb-db202109280838.adb.sa-saopaulo-1.oraclecloudapps.com/ords/admin/games/games",
+									"protocol": "https",
+									"host": [
+										"gaaed14b85e5bfb-db202109280838",
+										"adb",
+										"sa-saopaulo-1",
+										"oraclecloudapps",
+										"com"
+									],
+									"path": [
+										"ords",
+										"admin",
+										"games",
+										"games"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"id\":1,\n\"developer\":\"Ubisoft\",\n\"minage\":13,\n\"category_id\":7,\n\"name\":\"Rayman\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gaaed14b85e5bfb-db202109280838.adb.sa-saopaulo-1.oraclecloudapps.com/ords/admin/games/games",
+									"protocol": "https",
+									"host": [
+										"gaaed14b85e5bfb-db202109280838",
+										"adb",
+										"sa-saopaulo-1",
+										"oraclecloudapps",
+										"com"
+									],
+									"path": [
+										"ords",
+										"admin",
+										"games",
+										"games"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PUT",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"developer\": \"Microsoft\",\n    \"minage\": 5,\n    \"category_id\": 13,\n    \"name\": \"World\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gaaed14b85e5bfb-db202109280838.adb.sa-saopaulo-1.oraclecloudapps.com/ords/admin/games/games",
+									"protocol": "https",
+									"host": [
+										"gaaed14b85e5bfb-db202109280838",
+										"adb",
+										"sa-saopaulo-1",
+										"oraclecloudapps",
+										"com"
+									],
+									"path": [
+										"ords",
+										"admin",
+										"games",
+										"games"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "RETO3",
+					"item": [
+						{
+							"name": "Category Save Oracle",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"cat1\",\n    \"description\":\"test category\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://144.22.232.202/api/Category/save",
+									"protocol": "http",
+									"host": [
+										"144",
+										"22",
+										"232",
+										"202"
+									],
+									"path": [
+										"api",
+										"Category",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Game Save Oracle",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"developer\":\"Ubisoft\",\n    \"year\":2012,\n    \"category\":\n    {\n        \"id\":1\n    },\n    \"name\":\"Rayman\",\n    \"description\":\"Rayman\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://144.22.232.202/api/Game/save",
+									"protocol": "http",
+									"host": [
+										"144",
+										"22",
+										"232",
+										"202"
+									],
+									"path": [
+										"api",
+										"Game",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Client Game Oracle",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Agustin Parra\",\n    \"email\":\"agustin@gmail.com\",\n    \"password\":\"agustin123\",\n    \"age\":18\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://144.22.232.202/api/Client/save",
+									"protocol": "http",
+									"host": [
+										"144",
+										"22",
+										"232",
+										"202"
+									],
+									"path": [
+										"api",
+										"Client",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Message Save Oracle",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"messageText\":\"Me gusta.\",\n    \"client\":{\n        \"idClient\":1\n    },\n    \"game\":{\n        \"id\":1\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://144.22.232.202/api/Message/save",
+									"protocol": "http",
+									"host": [
+										"144",
+										"22",
+										"232",
+										"202"
+									],
+									"path": [
+										"api",
+										"Message",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Reservation Save Oracle",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"startDate\":\"2020-12-20\",\n    \"devolutionDate\":\"2020-12-20\",\n    \"client\":{\n        \"idClient\":1\n    },\n    \"game\":{\n        \"id\":1\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://144.22.232.202/api/Reservation/save",
+									"protocol": "http",
+									"host": [
+										"144",
+										"22",
+										"232",
+										"202"
+									],
+									"path": [
+										"api",
+										"Reservation",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Category Get All Oracle",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://144.22.232.202/api/Category/all",
+									"protocol": "http",
+									"host": [
+										"144",
+										"22",
+										"232",
+										"202"
+									],
+									"path": [
+										"api",
+										"Category",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Game Get All Copy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://144.22.232.202/api/Game/all",
+									"protocol": "http",
+									"host": [
+										"144",
+										"22",
+										"232",
+										"202"
+									],
+									"path": [
+										"api",
+										"Game",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Client Get All Oracle",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://144.22.232.202/api/Client/all",
+									"protocol": "http",
+									"host": [
+										"144",
+										"22",
+										"232",
+										"202"
+									],
+									"path": [
+										"api",
+										"Client",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Message Get All Oracle",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://144.22.232.202/api/Message/all",
+									"protocol": "http",
+									"host": [
+										"144",
+										"22",
+										"232",
+										"202"
+									],
+									"path": [
+										"api",
+										"Message",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Reservation Get All Copy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://144.22.232.202/api/Reservation/all",
+									"protocol": "http",
+									"host": [
+										"144",
+										"22",
+										"232",
+										"202"
+									],
+									"path": [
+										"api",
+										"Reservation",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Category Save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"cat1\",\n    \"description\":\"test category\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/Category/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"Category",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Game Save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"developer\":\"Ubisoft\",\n    \"year\":2012,\n    \"category\":\n    {\n        \"id\":1\n    },\n    \"name\":\"Rayman\",\n    \"description\":\"Rayman\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/Game/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"Game",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Client Save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Agustin Parra\",\n    \"email\":\"agustin@gmail.com\",\n    \"password\":\"agustin123\",\n    \"age\":18\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/Client/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"Client",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Message Save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"messageText\":\"Me gusta.\",\n    \"client\":{\n        \"idClient\":1\n    },\n    \"game\":{\n        \"id\":1\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/Message/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"Message",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Reservation Save",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"startDate\":\"2020-12-20\",\n    \"devolutionDate\":\"2020-12-20\",\n    \"client\":{\n        \"idClient\":1\n    },\n    \"game\":{\n        \"id\":1\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/Reservation/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"Reservation",
+										"save"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Category Get All",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/Category/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"Category",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Game Get All",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/Game/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"Game",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Client Get All",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/Client/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"Client",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Message Get All",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/Message/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"Message",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Reservation Get All",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/Reservation/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"Reservation",
+										"all"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "RETO4",
+					"item": [
+						{
+							"name": "LOCAL",
+							"item": [
+								{
+									"name": "Category Save",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\":\"categoria1\",\n    \"description\":\"primera categoria\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/Category/save",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"Category",
+												"save"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Category Get All",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/Category/all",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"Category",
+												"all"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Category Update",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\":1,\n    \"name\":\"modificada\",\n    \"description\":\"se ha modificado\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/Category/update",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"Category",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Category Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/Category/1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"Category",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Game Save",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"developer\":\"Ubisoft\",\n    \"year\":2012,\n    \"category\":\n    {\n        \"id\":1\n    },\n    \"name\":\"Rayman\",\n    \"description\":\"Rayman\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/Game/save",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"Game",
+												"save"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Game Get All",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/Game/all",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"Game",
+												"all"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Game Update",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\":1,\n    \"developer\":\"EA\",\n    \"name\":\"FIFA\",\n    \"description\":\"Fifa fut\",\n    \"year\":2022\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/Game/update",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"Game",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Game Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/Game/1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"Game",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Client Save",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\":\"Agustin Parra\",\n    \"email\":\"agustin@gmail.com\",\n    \"password\":\"agustin123\",\n    \"age\":18\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/Client/save",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"Client",
+												"save"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Client Get All",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/Client/all",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"Client",
+												"all"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Client Update",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idClient\":1,\n    \"name\":\"Adeodato Sanchez\",\n    \"email\":\"agustin@gmail.com\",\n    \"password\":\"adeodato123\",\n    \"age\":15\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/Client/update",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"Client",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Client Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/Client/1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"Client",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "REMOTE",
+							"item": [
+								{
+									"name": "Category Save",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\":\"categoria1\",\n    \"description\":\"primera categoria\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{host}}/api/Category/save",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"Category",
+												"save"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Category Get All",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/Category/all",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"Category",
+												"all"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Category Update",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\":1,\n    \"name\":\"modificada\",\n    \"description\":\"se ha modificado\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{host}}/api/Category/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"Category",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Category Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/Category/1",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"Category",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Game Save",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"developer\":\"Ubisoft\",\n    \"year\":2012,\n    \"category\":\n    {\n        \"id\":1\n    },\n    \"name\":\"Rayman\",\n    \"description\":\"Rayman\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{host}}/api/Game/save",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"Game",
+												"save"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Game Get All",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/Game/all",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"Game",
+												"all"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Game Update",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\":1,\n    \"developer\":\"EA\",\n    \"name\":\"FIFA\",\n    \"description\":\"Fifa fut\",\n    \"year\":2022\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{host}}/api/Game/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"Game",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Game Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/Game/1",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"Game",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Client Save",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\":\"Agustin Parra\",\n    \"email\":\"agustin@gmail.com\",\n    \"password\":\"agustin123\",\n    \"age\":18\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{host}}/api/Client/save",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"Client",
+												"save"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Client Get All",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/Client/all",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"Client",
+												"all"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Client Update",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idClient\":1,\n    \"name\":\"Adeodato Sanchez\",\n    \"email\":\"agustin@gmail.com\",\n    \"password\":\"adeodato123\",\n    \"age\":15\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{host}}/api/Client/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"Client",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Client Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/Client/1",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"Client",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://144.22.232.202"
+		}
+	]
+}

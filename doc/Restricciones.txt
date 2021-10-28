@@ -1,0 +1,80 @@
+Título:	Creación de Juegos
+Criterios de aceptación	
+Los valores de desarrollador y nombre deben ser un texto de no más de 45 caracteres.
+Los valores de edad mínima deben ser un número que representa la edad mínima que deben tener los jugadores.
+Los valores de descripción deben ser un texto de máximo 250 caracteres.
+El valor de categoría debe ser un número entero que representa el id de cada una de las categorías.
+El usuario debe seleccionar la categoría viendo el nombre de la misma, no el número.
+
+Título:	Creación de Categorías
+Criterios de aceptación	
+Los valores de nombre deben ser un texto de no más de 45 caracteres.
+Los valores de descripción deben ser un texto de máximo 250 caracteres.
+
+Título:	Creación de Clientes
+Criterios de aceptación	
+Los valores de correo y contraseña deben ser un texto de no más de 45 caracteres.
+Los valores de edad deben ser un número que represente los años.
+Los valores de nombre deben ser un texto de máximo 250 caracteres.
+
+Título:	Creación de Mensajes
+Criterios de aceptación	
+Los valores de texto deben ser una cadena de caracteres no superior a 250 caracteres
+El valor de juego corresponde al id de cada juego y es un valor numérico.
+El usuario debe seleccionar el juego por su nombre, puesto que el id debe ser invisible para el usuario.
+
+Título:	Creación de Reservas
+Criterios de aceptación	
+Los valores de cliente debe ser un numero entero correspondiente al id del cliente.
+El valor de juego corresponde al id de cada juego y es un valor numérico.
+El usuario debe seleccionar el juego por su nombre, puesto que el id debe ser invisible para el usuario.
+Los valores de fecha de inicio y fecha entrega deben ser fechas en el formato YYYY-mm-dd
+La reserva creada debe tener status: 'Creado' y la fecha de creación, debe ser tomada del reloj del sistema. No son datos que el usuario ingrese.
+
+Título:	Creación de Calificación de Reservas
+Criterios de aceptación	
+Los valores de calificación debe ser un número entero entre 0 y 5.
+Los valores de mensaje deben ser un texto no superior a 250 caracteres.
+El valor de la reserva es un número entero y debe ser tomado de la reserva que se esté calificando. El usuario no ingresa el número de reserva.
+
+Título:	Creación de Usuarios Administradores
+Descripción	
+Criterios de aceptación	
+Los valores de correo y contraseña deben ser un texto de no más de 45 caracteres.
+Los valores de nombre deben ser un texto de máximo 250 caracteres.
+
+Título:	Visualización de Juegos
+Criterios de aceptación	
+La lista de juegos se debe cargar sin mostrar el id.
+La lista no debe mostrar el id de la categoría.
+
+Título:	Visualización de Categorías
+Criterios de aceptación	
+La lista de categorías se debe cargar sin mostrar el id.
+La lista de juegos de cada categoría no debe mostrar el id de los juegos.
+
+Título:	Visualización de Clientes
+PARA:	Ver los clientes que hay en el sistema
+Criterios de aceptación	
+La lista de clientes se debe cargar sin mostrar el password.
+Deben cargar todos los clientes que hay en base de datos.
+
+Título:	Visualización de Mensajes
+Criterios de aceptación	
+La lista de mensajes se debe cargar sin mostrar el id.
+La lista no debe mostrar el id de la del juego.
+La lista no debe mostrar el id del cliente
+Se deben mostrar todos los mensajes.
+
+Título:	Visualización de Reservas
+Criterios de aceptación	
+La lista de reservas se debe cargar mostrando el id.
+La lista no debe mostrar el id del juego de cada reserva.
+La lista debe mostrar el id, nombre y correo solamente del cliente.
+La lista debe mostrar las calificación de la reserva en caso que la tenga.
+La lista no debe mostrar el id de una calificación.
+
+Título:	Visualización de Usuarios administradores
+Criterios de aceptación	
+La lista de administradoress se debe cargar sin mostrar el password.
+Deben cargar todos los usuarios administradores que hay en base de datos.
